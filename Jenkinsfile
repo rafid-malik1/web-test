@@ -4,9 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/rafid-malik1/web-test.git'
-
-
+                git branch: 'main', url: 'https://github.com/rafid-malik1/web-test.git'
             }
         }
 
@@ -29,3 +27,4 @@ pipeline {
         }
     }
 }
+
